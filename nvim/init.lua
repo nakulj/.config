@@ -32,6 +32,10 @@ packer.startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use {
+   'google/vim-codefmt',
+   requires = {{'google/vim-maktaba'},{ 'google/vim-glaive'}}
+  }
   end
 )
 local actions = require("telescope.actions")
