@@ -8,10 +8,6 @@ local manipulators(i, conditions=null) = std.map(
   ),
   i
 );
-local unlessAlacritty = {
-  bundle_identifiers: ['alacritty'],
-  type: 'frontmost_application_unless',
-};
 local event(key_code, extra={}) = extra { key_code: key_code };
 local anyModifier = { modifiers: { optional: ['any'] } };
 local swap_modifier(from, to, key_code) = {
@@ -101,7 +97,6 @@ local set_caps_pressed(v) = { set_variable: { name: 'caps_lock pressed', value: 
               from: event('right_shift', anyModifier),
               to: event('right_shift', { lazy: true }),
             }],
-            conditions=unlessAlacritty
           ),
         }, {
           description: 'Cmd + Arrow Keys to Option + Arrow Keys',
@@ -132,7 +127,7 @@ local set_caps_pressed(v) = { set_variable: { name: 'caps_lock pressed', value: 
           }, {
             from: event('end'),
             to: event('right_arrow', { modifiers: 'command' }),
-          }], conditions=unlessAlacritty),
+          }] ),
         }],
       },
       devices: [{
