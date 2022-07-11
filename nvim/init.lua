@@ -28,5 +28,21 @@ packer.startup(function()
   use 'wbthomason/packer.nvim'
   use 'scrooloose/nerdcommenter'
   use 'tpope/vim-surround'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   end
 )
+local actions = require("telescope.actions")
+require("telescope").setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+        ["<C-u>"] = false,
+      },
+    },
+  }
+}
+
