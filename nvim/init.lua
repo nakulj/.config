@@ -19,3 +19,14 @@ opt.wildmode='longest:full,full'
 for _,mode in pairs({'n','v'}) do
 	vim.api.nvim_set_keymap(mode,';',':',{noremap=true})
 end
+
+-- plugins
+
+local packer = require'packer'
+packer.startup(function()
+  local use = use
+  use 'wbthomason/packer.nvim'
+  use 'scrooloose/nerdcommenter'
+  use 'tpope/vim-surround'
+  end
+)
