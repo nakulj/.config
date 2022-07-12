@@ -47,6 +47,7 @@ packer.startup(function()
     requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'}
   }
   use 'mhinz/vim-signify'
+  use 'folke/tokyonight.nvim'
 end)
 
 local actions = require("telescope.actions")
@@ -61,10 +62,13 @@ require("telescope").setup{
   }
 }
 
+vim.g.tokyonight_style = "night"
+vim.cmd[[colorscheme tokyonight]]
+
 require('lualine').setup {
   options = {
     icons_enabled = false,
-    theme = 'auto',
+    theme = 'tokyonight',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
