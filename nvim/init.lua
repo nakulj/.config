@@ -11,6 +11,7 @@ opt.incsearch=true
 opt.mouse='a'
 opt.shiftwidth=2
 opt.shortmess='filnxtToOFI'
+opt.number=true
 opt.signcolumn='number'
 opt.tabstop=2
 opt.updatetime=300
@@ -45,8 +46,9 @@ packer.startup(function()
     config = function() require'tabline'.setup {enable = false} end,
     requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'}
   }
-  end
-)
+  use 'mhinz/vim-signify'
+end)
+
 local actions = require("telescope.actions")
 require("telescope").setup{
   defaults = {
