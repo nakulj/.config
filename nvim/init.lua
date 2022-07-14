@@ -48,6 +48,9 @@ packer.startup(function()
   }
   use 'mhinz/vim-signify'
   use 'folke/tokyonight.nvim'
+  use 'google/vim-jsonnet'
+
+
 end)
 
 local actions = require("telescope.actions")
