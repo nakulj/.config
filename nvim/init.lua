@@ -26,9 +26,12 @@ end
 local packer = require'packer'
 packer.startup(function()
   local use = use
-  use 'wbthomason/packer.nvim'
+  use 'folke/tokyonight.nvim'
+  use 'google/vim-jsonnet'
+  use 'mhinz/vim-signify'
   use 'scrooloose/nerdcommenter'
   use 'tpope/vim-surround'
+  use 'wbthomason/packer.nvim'
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}}
@@ -46,10 +49,6 @@ packer.startup(function()
     config = function() require'tabline'.setup {enable = false} end,
     requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'}
   }
-  use 'mhinz/vim-signify'
-  use 'folke/tokyonight.nvim'
-  use 'google/vim-jsonnet'
-
 
 end)
 
