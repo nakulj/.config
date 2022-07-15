@@ -6,3 +6,4 @@ fish/functions/fish_prompt.fish
 fish/functions/fish_mode_prompt.fish
 karabiner/automatic_backups
 coc/
+gh/hosts.yml
