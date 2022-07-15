@@ -19,10 +19,11 @@ opt.wildmode='longest:full,full'
 
 for _,mode in pairs({'n','v'}) do
 	vim.api.nvim_set_keymap(mode,';',':',{noremap=true})
+	vim.api.nvim_set_keymap(mode,'<leader>f',':FormatLines<CR>',{noremap=true})
 end
 
 vim.api.nvim_set_keymap('n','<C-p>',':Telescope find_files<CR>',{noremap=true})
-vim.api.nvim_set_keymap('n','\\w',':bd<CR>',{noremap=true})
+vim.api.nvim_set_keymap('n','<leader>w',':bd<CR>',{noremap=true})
 
 -- plugins
 
