@@ -21,6 +21,8 @@ for _,mode in pairs({'n','v'}) do
 	vim.api.nvim_set_keymap(mode,';',':',{noremap=true})
 end
 
+vim.api.nvim_set_keymap('n','<C-p>',':Telescope find_files<CR>',{noremap=true})
+
 -- plugins
 
 local packer = require'packer'
