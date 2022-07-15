@@ -17,14 +17,6 @@ opt.tabstop=2
 opt.updatetime=300
 opt.wildmode='longest:full,full'
 
-for _,mode in pairs({'n','v'}) do
-	vim.api.nvim_set_keymap(mode,';',':',{noremap=true})
-	vim.api.nvim_set_keymap(mode,'<leader>f',':FormatLines<CR>',{noremap=true})
-end
-
-vim.api.nvim_set_keymap('n','<C-p>',':Telescope find_files<CR>',{noremap=true})
-vim.api.nvim_set_keymap('n','<leader>w',':bd<CR>',{noremap=true})
-
 -- plugins
 
 local packer = require'packer'
@@ -119,3 +111,17 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+local noremap = function (modes, left, right)
+  for mode in modes:gmatch"." do
+    vim.api.nvim_set_keymap(mode,left,right,{noremap=true})
+  end
+end
+
+noremap('nv',';',':')
+noremap('nv','<leader>f',':FormatLines<CR>')
+
+
+noremap('n','<C-p>',':Telescope find_files<CR>')
+noremap('n','<leader>w',':bd<CR>')
+
