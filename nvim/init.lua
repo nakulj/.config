@@ -125,3 +125,5 @@ noremap('nv','<leader>f',':FormatLines<CR>')
 noremap('n','<C-p>',':Telescope find_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
 
+-- bits i was too lazy to port from .vimrc
+vim.cmd('source ~/.config/nvim/config.vim')
