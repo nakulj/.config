@@ -35,6 +35,7 @@ packer.startup(function()
   use 'scrooloose/nerdcommenter'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
+  use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}}

@@ -1,36 +1,4 @@
 {
-  "java.completion.filteredTypes": [
-    "avro.shaded.*",
-    "com.github.filosganga.*",
-    "com.google.api.*",
-    "com.google.bigtable.*",
-    "com.google.cloud.hadoop.*",
-    "com.google.common.base.Optional",
-    "com.google.common.base.Function",
-    "com.google.devtools.*",
-    "com.google.maps.*",
-    "com.google.protobuf.Internal",
-    "com.google.rpc.*",
-    "com.squareup.*",
-    "groovy.*",
-    "groovyjarjarantlr.*",
-    "groovyjarjarcommonscli.*",
-    "io.*",
-    "java.awt.*",
-    "javax.*",
-    "liqp.*",
-    "net.bytebuddy.*",
-    "net.minidev.*",
-    "org.apache.*",
-    "org.apache.beam.repackaged.*",
-    "org.bouncycastle.*",
-    "org.codehaus.*",
-    "org.eclipse.*",
-    "org.jivesoftware.*",
-    "org.kohsuke.*",
-    "org.mockito.internal.*",
-    "org.yaml.*"
-  ],
   "java.signatureHelp.enabled": true,
   "java.completion.favoriteStaticMembers": [
     "com.google.common.collect.ImmutableList.toImmutableList",
@@ -39,5 +7,6 @@
     "com.google.mu.util.stream.BiStream.*",
     "java.util.stream.Stream.*"
   ],
-  "java.completion.maxResults":8
+  "java.completion.maxResults": 8,
+  "Lua.diagnostics.globals": ["vim","use"]
 }
