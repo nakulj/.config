@@ -50,6 +50,7 @@ packer.startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
 
 end)
 
@@ -124,6 +125,28 @@ noremap('nv','<leader>f',':FormatLines<CR>')
 
 noremap('n','<C-p>',':Telescope find_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
+
+require'nvim-treesitter.configs'.setup {
+  textobjects = {
+    select = {
+      enable = true,
+
+      -- Automatically jump forward to textobj, similar to targets.vim
+      lookahead = true,
+
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        ["ic"] = "@class.inner",
+        ["a,"] = "@parameter.outer",
+        ["i,"] = "@parameter.inner",
+      },
+    },
+  },
+}
+
 
 -- bits i was too lazy to port from .vimrc
 vim.cmd('source ~/.config/nvim/config.vim')
