@@ -22,14 +22,13 @@ key_bindings:
   - { key: C,         mods: Command,       chars: "\x03"}
   - { key: D,         mods: Command,       chars: "\x04" }
   - { key: E,         mods: Command,       chars: "\x05" }
-  - { key: F,         mods: Command,       chars: "\x06" }
+  - { key: F,         mods: Command,       action: ToggleFullScreen }
   - { key: G,         mods: Command,       chars: "\x07" }
   - { key: H,         mods: Command,       chars: "\x08" }
   - { key: I,         mods: Command,       chars: "\x09" }
   - { key: J,         mods: Command,       chars: "\x0a" }
   - { key: K,         mods: Command,       chars: "\x0b" }
   - { key: L,         mods: Command, mode: ~Vi|~Search, chars: "\x0c" }
-  - { key: L,         mods: Command, mode: ~Vi|~Search, action: ClearHistory }
   - { key: M,         mods: Command,       chars: "\x0d" }
   - { key: N,         mods: Command,       action: SpawnNewInstance }
   - { key: O,         mods: Command,       chars: "\x0f" }
