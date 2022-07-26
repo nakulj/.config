@@ -38,7 +38,7 @@ key_bindings:
   - { key: S,         mods: Command,       chars: "\x13" }
   - { key: T,         mods: Command,       chars: "\x14" }
   - { key: U,         mods: Command,       chars: "\x15" }
-  - { key: V,         mods: Command,       chars: "\x16" }
+  - { key: V,         mods: Command,       action: Paste}
   - { key: V,         mods: Command|Shift, chars: "\x1b[86;5u" }
   - { key: W,         mods: Command,       chars: "\x17" }
   - { key: X,         mods: Command,       chars: "\x18" }
