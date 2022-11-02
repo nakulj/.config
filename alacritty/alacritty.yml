@@ -1,7 +1,12 @@
 font:
   size: 15
   normal:
-    family: monofur for Powerline
+    family: Monofur Nerd Font Mono
+  bold:
+    family: Monofurbold Nerd Font Mono
+  italic:
+    family: Monofuritalic Nerd Font Mono
+
 
 key_bindings:
   - { key: Key0,           mods: Command,                    action: ResetFontSize    }
