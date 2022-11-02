@@ -105,7 +105,7 @@ require('lualine').setup {
   extensions = {}
 }
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"lua","java"},
+  ensure_installed = {"lua","java","scala","go","python"},
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false,
