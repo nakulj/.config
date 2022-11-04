@@ -16,6 +16,8 @@ opt.signcolumn='number'
 opt.tabstop=2
 opt.updatetime=300
 opt.wildmode='longest:full,full'
+opt.ignorecase=true
+opt.smartcase=true
 
 -- plugins
 
@@ -149,3 +151,4 @@ require'nvim-treesitter.configs'.setup {
 
 -- bits i was too lazy to port from .vimrc
 vim.cmd('source ~/.config/nvim/config.vim')
+
