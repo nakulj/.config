@@ -27,5 +27,7 @@
   enabled = true
 [init]
   defaultBranch = main
+[color]
+	ui = true
 [includeIf "gitdir:~/src/"]
   path = /Users/nakul.joshi/.config/git/reddit
