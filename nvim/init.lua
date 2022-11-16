@@ -52,6 +52,10 @@ packer.startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use({
+    'python-rope/ropevim',
+    ft = "python"
+  })
   use 'nvim-treesitter/nvim-treesitter-textobjects'
 
 end)
@@ -124,7 +128,7 @@ noremap('nv',';',':')
 noremap('nv','<leader>f',':FormatLines<CR>')
 
 
-noremap('n','<C-p>',':Telescope find_files<CR>')
+noremap('n','<C-p>',':Telescope git_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
 
 require'nvim-treesitter.configs'.setup {
