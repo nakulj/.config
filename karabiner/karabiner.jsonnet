@@ -28,6 +28,8 @@ local _caps_manipulator(from, to) = {
               _caps_manipulator('j', 'down_arrow'),
               _caps_manipulator('k', 'up_arrow'),
               _caps_manipulator('l', 'right_arrow'),
+              _caps_manipulator('i', 'home'),
+              _caps_manipulator('n', 'end'),
               {
                 from: {
                   key_code: 'caps_lock',
@@ -178,50 +180,6 @@ local _caps_manipulator(from, to) = {
                   },
                 ],
                 type: 'basic',
-              },
-            ],
-          },
-          {
-            description: 'PC-Style Home/End',
-            manipulators: [
-              {
-                from: {
-                  key_code: 'home',
-                  modifiers: {
-                    optional: [
-                      'shift',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'a',
-                    modifiers: [
-                      'left_command',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-              {
-                from: {
-                  key_code: 'end',
-                  modifiers: {
-                    optional: [
-                      'shift',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'e',
-                    modifiers: [
-                      'left_command',
-                    ],
-                  },
-                ],
-                type: 'basic',
-
               },
             ],
           },

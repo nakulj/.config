@@ -111,6 +111,52 @@
                         "type": "basic"
                      },
                      {
+                        "conditions": [
+                           {
+                              "name": "caps_lock pressed",
+                              "type": "variable_if",
+                              "value": 1
+                           }
+                        ],
+                        "from": {
+                           "key_code": "i",
+                           "modifiers": {
+                              "optional": [
+                                 "any"
+                              ]
+                           }
+                        },
+                        "to": [
+                           {
+                              "key_code": "home"
+                           }
+                        ],
+                        "type": "basic"
+                     },
+                     {
+                        "conditions": [
+                           {
+                              "name": "caps_lock pressed",
+                              "type": "variable_if",
+                              "value": 1
+                           }
+                        ],
+                        "from": {
+                           "key_code": "n",
+                           "modifiers": {
+                              "optional": [
+                                 "any"
+                              ]
+                           }
+                        },
+                        "to": [
+                           {
+                              "key_code": "end"
+                           }
+                        ],
+                        "type": "basic"
+                     },
+                     {
                         "from": {
                            "key_code": "caps_lock",
                            "modifiers": {
@@ -256,49 +302,6 @@
                               "key_code": "right_arrow",
                               "modifiers": [
                                  "option"
-                              ]
-                           }
-                        ],
-                        "type": "basic"
-                     }
-                  ]
-               },
-               {
-                  "description": "PC-Style Home/End",
-                  "manipulators": [
-                     {
-                        "from": {
-                           "key_code": "home",
-                           "modifiers": {
-                              "optional": [
-                                 "shift"
-                              ]
-                           }
-                        },
-                        "to": [
-                           {
-                              "key_code": "a",
-                              "modifiers": [
-                                 "left_command"
-                              ]
-                           }
-                        ],
-                        "type": "basic"
-                     },
-                     {
-                        "from": {
-                           "key_code": "end",
-                           "modifiers": {
-                              "optional": [
-                                 "shift"
-                              ]
-                           }
-                        },
-                        "to": [
-                           {
-                              "key_code": "e",
-                              "modifiers": [
-                                 "left_command"
                               ]
                            }
                         ],
