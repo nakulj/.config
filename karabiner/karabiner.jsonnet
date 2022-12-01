@@ -4,6 +4,11 @@ local _caps_manipulator(from, to) = {
   to: [{ key_code: to }],
   type: 'basic',
 };
+local _swap_ctrl_option(key) = {
+  from: { key_code: key, modifiers: { mandatory: ['control'] } },
+  to: [{ key_code: key, modifiers: ['option'] }],
+  type: 'basic',
+};
 {
   global: {
     check_for_updates_on_startup: true,
@@ -31,157 +36,20 @@ local _caps_manipulator(from, to) = {
               _caps_manipulator('i', 'home'),
               _caps_manipulator('n', 'end'),
               {
-                from: {
-                  key_code: 'caps_lock',
-                  modifiers: {
-                    optional: [
-                      'any',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    set_variable: {
-                      name: 'caps_lock pressed',
-                      value: 1,
-                    },
-                  },
-                ],
-                to_after_key_up: [
-                  {
-                    set_variable: {
-                      name: 'caps_lock pressed',
-                      value: 0,
-                    },
-                  },
-                ],
+                from: { key_code: 'caps_lock', modifiers: { optional: ['any'] } },
+                to: [{ set_variable: { name: 'caps_lock pressed', value: 1 } }],
+                to_after_key_up: [{ set_variable: { name: 'caps_lock pressed', value: 0 } }],
                 type: 'basic',
               },
             ],
           },
           {
             description: 'Ctrl + BS/Del Keys to Option + BS/Del Keys',
-            manipulators: [
-              {
-                from: {
-                  key_code: 'delete_or_backspace',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'delete_or_backspace',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-              {
-                from: {
-                  key_code: 'delete_forward',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'delete_forward',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-            ],
+            manipulators: std.map(_swap_ctrl_option, ['delete_or_backspace', 'delete_forward']),
           },
           {
             description: 'Ctrl + Arrow Keys to Option + Arrow Keys',
-            manipulators: [
-              {
-                from: {
-                  key_code: 'up_arrow',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'up_arrow',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-              {
-                from: {
-                  key_code: 'down_arrow',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'down_arrow',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-              {
-                from: {
-                  key_code: 'left_arrow',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'left_arrow',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-              {
-                from: {
-                  key_code: 'right_arrow',
-                  modifiers: {
-                    mandatory: [
-                      'control',
-                    ],
-                  },
-                },
-                to: [
-                  {
-                    key_code: 'right_arrow',
-                    modifiers: [
-                      'option',
-                    ],
-                  },
-                ],
-                type: 'basic',
-              },
-            ],
+            manipulators: std.map(_swap_ctrl_option, ['up_arrow', 'down_arrow', 'left_arrow', 'right_arrow']),
           },
         ],
       },
