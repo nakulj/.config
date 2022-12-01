@@ -2,8 +2,6 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 fish_add_path /opt/homebrew/opt/openjdk/bin
 
-status --is-interactive; and source (jenv init -|psub)
-
 set fish_greeting
 
 # TokyoNight Color Palette
