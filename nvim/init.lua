@@ -29,6 +29,7 @@ packer.startup(function()
   use 'mhinz/vim-signify'
   use 'scrooloose/nerdcommenter'
   use 'tpope/vim-surround'
+  use 'tpope/vim-fugitive'
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use {
