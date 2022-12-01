@@ -186,7 +186,7 @@
                   ]
                },
                {
-                  "description": "Ctrl + BS/Del Keys to Option + BS/Del Keys",
+                  "description": "PC-like word navigation",
                   "manipulators": [
                      {
                         "from": {
@@ -225,12 +225,7 @@
                            }
                         ],
                         "type": "basic"
-                     }
-                  ]
-               },
-               {
-                  "description": "Ctrl + Arrow Keys to Option + Arrow Keys",
-                  "manipulators": [
+                     },
                      {
                         "from": {
                            "key_code": "up_arrow",

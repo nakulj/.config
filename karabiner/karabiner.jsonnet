@@ -44,12 +44,10 @@ local _swap_ctrl_option(key) = {
             ],
           },
           {
-            description: 'Ctrl + BS/Del Keys to Option + BS/Del Keys',
-            manipulators: std.map(_swap_ctrl_option, ['delete_or_backspace', 'delete_forward']),
-          },
-          {
-            description: 'Ctrl + Arrow Keys to Option + Arrow Keys',
-            manipulators: std.map(_swap_ctrl_option, ['up_arrow', 'down_arrow', 'left_arrow', 'right_arrow']),
+            description: 'PC-like word navigation',
+            manipulators: std.map(
+              _swap_ctrl_option, ['delete_or_backspace', 'delete_forward', 'up_arrow', 'down_arrow', 'left_arrow', 'right_arrow']
+            ),
           },
         ],
       },
