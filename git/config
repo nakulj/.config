@@ -24,7 +24,7 @@
 [credential]
   helper = osxkeychain
 [rerere]
-  enabled = true
+	enabled = true
 [init]
   defaultBranch = main
 [color]
@@ -36,3 +36,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[push]
+	autoSetupRemote = true
