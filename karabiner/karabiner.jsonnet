@@ -64,18 +64,7 @@ local _swap_ctrl_option(key) = {
           },
           ignore: false,
           manipulate_caps_lock_led: true,
-          simple_modifications: [
-            {
-              from: {
-                key_code: 'caps_lock',
-              },
-              to: [
-                {
-                  key_code: 'right_command',
-                },
-              ],
-            },
-          ],
+          simple_modifications: [],
           treat_as_built_in_keyboard: false,
         },
         {
