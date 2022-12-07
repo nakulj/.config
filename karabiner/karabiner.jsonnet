@@ -35,6 +35,7 @@ local _swap_ctrl_option(key) = {
               _caps_manipulator('l', 'right_arrow'),
               _caps_manipulator('i', 'home'),
               _caps_manipulator('n', 'end'),
+              _caps_manipulator('escape', 'grave_accent_and_tilde'),
               {
                 from: { key_code: 'caps_lock', modifiers: { optional: ['any'] } },
                 to: [{ set_variable: { name: 'caps_lock pressed', value: 1 } }],
