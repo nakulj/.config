@@ -31,6 +31,7 @@ packer.startup(function()
   use 'tpope/vim-surround'
   use 'tpope/vim-fugitive'
   use 'wbthomason/packer.nvim'
+  use 'michaeljsmith/vim-indent-object'
   use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'nvim-telescope/telescope.nvim',
