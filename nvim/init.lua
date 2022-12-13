@@ -18,6 +18,7 @@ opt.updatetime=300
 opt.wildmode='longest:full,full'
 opt.ignorecase=true
 opt.smartcase=true
+vim.o.termguicolors = true
 
 -- plugins
 
