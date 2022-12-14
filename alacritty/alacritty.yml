@@ -60,7 +60,7 @@ shell:
   program: /opt/homebrew/bin/fish
 
 window:
-  decorations: Buttonless
+  decorations: full
 
 cursor:
   blinking: On
