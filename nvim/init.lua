@@ -122,6 +122,8 @@ noremap('nv','<leader>f',':FormatLines<CR>')
 noremap('n','<C-p>',':Telescope git_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
 
+noremap('nv','<TAB>',':bn<CR>')
+
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"lua","java","scala","go","python"},
   highlight = {
