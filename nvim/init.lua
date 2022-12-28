@@ -47,11 +47,6 @@ packer.startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
   use {
-    'kdheepak/tabline.nvim',
-    config = function() require'tabline'.setup {enable = false} end,
-    requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'}
-  }
-  use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
@@ -104,9 +99,9 @@ require('lualine').setup {
     lualine_z = {}
   },
   tabline = {
-    lualine_a = {},
+    lualine_a = {'buffers'},
     lualine_b = {},
-    lualine_c = {require'tabline'.tabline_buffers},
+    lualine_c = {},
     lualine_x = {},
     lualine_y = {},
     lualine_z = {},
