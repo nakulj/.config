@@ -113,13 +113,6 @@ require('lualine').setup {
   },
   extensions = {}
 }
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"lua","java","scala","go","python"},
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-}
 
 local noremap = function (modes, left, right)
   for mode in modes:gmatch"." do
@@ -135,6 +128,11 @@ noremap('n','<C-p>',':Telescope git_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
 
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"lua","java","scala","go","python"},
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
   textobjects = {
     select = {
       enable = true,
