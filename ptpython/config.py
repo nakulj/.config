@@ -24,7 +24,7 @@ def configure(repl):
     repl.show_signature = True
 
     # Show docstring (bool).
-    repl.show_docstring = False
+    repl.show_docstring = True
 
     # Show the "[Meta+Enter] Execute" message when pressing [Enter] only
     # inserts a newline instead of executing the code.
@@ -38,7 +38,7 @@ def configure(repl):
     repl.completion_menu_scroll_offset = 0
 
     # Show line numbers (when the input contains multiple lines.)
-    repl.show_line_numbers = False
+    repl.show_line_numbers = True
 
     # Show status bar.
     repl.show_status_bar = True
@@ -63,7 +63,7 @@ def configure(repl):
     repl.complete_while_typing = True
 
     # Fuzzy and dictionary completion.
-    repl.enable_fuzzy_completion = False
+    repl.enable_fuzzy_completion = True
     repl.enable_dictionary_completion = False
 
     # Vi mode.
@@ -88,7 +88,7 @@ def configure(repl):
 
     # Enable auto suggestions. (Pressing right arrow will complete the input,
     # based on the history.)
-    repl.enable_auto_suggest = False
+    repl.enable_auto_suggest = True
 
     # Enable open-in-editor. Pressing C-x C-e in emacs mode or 'v' in
     # Vi navigation mode will open the input in the current editor.
@@ -112,7 +112,7 @@ def configure(repl):
     # https://pygments.org/demo/
     # repl.use_code_colorscheme("default")
     # A colorscheme that looks good on dark backgrounds is 'native':
-    repl.use_code_colorscheme("gruvbox-dark")
+    repl.use_code_colorscheme("native")
 
     # Set color depth (keep in mind that not all terminals support true color).
 
