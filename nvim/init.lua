@@ -20,9 +20,7 @@ opt.ignorecase=true
 opt.smartcase=true
 vim.o.termguicolors = true
 
-vim.cmd([[
-let g:coc_global_extensions = ['coc-pairs', 'coc-jedi', 'coc-tsserver', 'coc-java', 'coc-go']
-]])
+vim.g.coc_global_extensions = {'coc-pairs', 'coc-jedi', 'coc-tsserver', 'coc-java', 'coc-go'}
 
 -- plugins
 
