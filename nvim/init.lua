@@ -1,6 +1,7 @@
 local opt = vim.opt
 
 opt.autoread=true
+vim.api.nvim_command('autocmd BufEnter,FocusGained,VimResume * checktime')
 opt.backspace='indent,eol,start'
 opt.cmdheight=2
 opt.expandtab=true
