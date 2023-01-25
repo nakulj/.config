@@ -28,6 +28,7 @@ vim.g.coc_global_extensions = {'coc-pairs', 'coc-jedi', 'coc-tsserver', 'coc-jav
 local packer = require'packer'
 packer.startup(function()
   local use = use
+  use 'dag/vim-fish'
   use 'folke/tokyonight.nvim'
   use 'google/vim-jsonnet'
   use 'mhinz/vim-signify'
