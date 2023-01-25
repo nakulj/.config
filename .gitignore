@@ -1,6 +1,7 @@
 fish/fish_variables
-fish/completions/
-fish/functions/
+fish/completions
+fish/functions
+fish/conf.d
 karabiner/automatic_backups
 coc/
 gh/hosts.yml
