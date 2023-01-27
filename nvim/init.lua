@@ -105,6 +105,7 @@ _G.project_files = function()
 end
 
 noremap('n','<C-p>','<cmd>lua project_files()<CR>')
+noremap('n','<C-o>',':Telescope find_files<CR>')
 noremap('n','<leader>w',':bd<CR>')
 
 noremap('nv','<TAB>',':bn<CR>')
