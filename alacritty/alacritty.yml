@@ -2,13 +2,9 @@ env:
   TERM: xterm-256color
 
 font:
-  size: 15
+  size: 14
   normal:
-    family: Monofur Nerd Font Mono
-  bold:
-    family: Monofurbold Nerd Font Mono
-  italic:
-    family: Monofuritalic Nerd Font Mono
+    family: FantasqueSansMono Nerd Font
 
 
 key_bindings:
