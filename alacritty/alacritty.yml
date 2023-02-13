@@ -62,4 +62,4 @@ cursor:
   blinking: On
 
 import:
-  - ~/.config/alacritty/colors/tokyo-night.yml
+  - ~/.config/alacritty/colors/kanagawa.yml

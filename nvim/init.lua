@@ -30,6 +30,7 @@ packer.startup(function()
   local use = use
   use 'dag/vim-fish'
   use 'folke/tokyonight.nvim'
+  use 'rebelot/kanagawa.nvim'
   use 'google/vim-jsonnet'
   use 'mhinz/vim-signify'
   use 'scrooloose/nerdcommenter'
@@ -75,7 +76,7 @@ require("telescope").setup{
   }
 }
 
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd[[colorscheme kanagawa]]
 
 require('lualine').setup {
   tabline = {
