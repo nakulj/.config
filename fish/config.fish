@@ -4,8 +4,6 @@ fish_add_path /opt/homebrew/opt/openjdk/bin
 
 set fish_greeting
 
-source ~/.config/fish/colors/kanagawa.fish
-
  set -gx KUBE_EDITOR nvim
 
  set -g tide_left_prompt_items jobs vi_mode pwd git
