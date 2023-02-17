@@ -21,7 +21,7 @@ opt.ignorecase=true
 opt.smartcase=true
 vim.o.termguicolors = true
 
-vim.g.coc_global_extensions = {'coc-pairs', 'coc-jedi', 'coc-tsserver', 'coc-java', 'coc-go'}
+vim.g.coc_global_extensions = {'coc-pairs', 'coc-pyright', 'coc-tsserver', 'coc-java', 'coc-go'}
 
 -- plugins
 
