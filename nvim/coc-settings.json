@@ -10,5 +10,6 @@
   "java.completion.maxResults": 8,
   "Lua.diagnostics.globals": ["vim","use"],
   "java.home":"/opt/homebrew/Cellar/openjdk@11/11.0.16.1_1/libexec/openjdk.jdk/Contents/Home",
-  "java.jdt.ls.vmargs":"-Xms2G -Xmx4G"
+  "java.jdt.ls.vmargs":"-Xms2G -Xmx4G",
+  "python.linting.mypyEnabled": true
 }
