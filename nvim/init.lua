@@ -93,6 +93,8 @@ end
 
 noremap('nv',';',':')
 noremap('nv','<leader>f',':FormatLines<CR>')
+noremap('nv','qj',':cn<CR>')
+noremap('nv','qk',':cp<CR>')
 
 
 _G.project_files = function()
