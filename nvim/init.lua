@@ -40,6 +40,7 @@ packer.startup(function()
   use 'solarnz/thrift.vim'
   use 'michaeljsmith/vim-indent-object'
   use {'neoclide/coc.nvim', branch = 'release'}
+  use 'jremmen/vim-ripgrep'
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}}
