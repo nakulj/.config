@@ -1,6 +1,7 @@
 import = ["/Users/nakul/.config/alacritty/colors/kanagawa.toml"]
 
 [cursor]
+[cursor.style]
 blinking = "On"
 
 [env]
