@@ -111,7 +111,7 @@ end
 
 noremap('n','<C-p>','<cmd>lua project_files()<CR>')
 noremap('n','<C-o>',':Telescope find_files<CR>')
-noremap('n','<leader>w',':bd<CR>')
+noremap('n','<leader>w','<C-w>c')
 
 noremap('nv','<TAB>',':bn<CR>')
 
