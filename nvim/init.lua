@@ -28,6 +28,7 @@ vim.g.coc_global_extensions = {'coc-pairs', 'coc-pyright', 'coc-tsserver', 'coc-
 local packer = require'packer'
 packer.startup(function()
   local use = use
+  use 'ianding1/leetcode.vim'
   use 'dag/vim-fish'
   use 'folke/tokyonight.nvim'
   use 'rebelot/kanagawa.nvim'
@@ -140,6 +141,10 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+vim.g.leetcode_browser = 'chrome'
+vim.g.leetcode_solution_filetype = 'python3'
+vim.g.leetcode_hide_paid_only = 1
+vim.g.leetcode_problemset = 'algorithms'
 
 -- bits i was too lazy to port from .vimrc
 vim.cmd('source ~/.config/nvim/config.vim')
